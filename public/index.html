@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+    <style>
+        .body {
+            display: inline-block;
+            vertical-align: middle;
+            
+        }
+        
+        #messages {
+            position: absolute;
+        }
+
+        ul {
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <p>Enter your name: <input id="nameInput"></p>
+    <p>Name: <span id="viewName"> Not joined yet, please type in a username</span></p>
+
+    <div class="body"><ul id="messages"></ul> <ul id="connectedUsers"></ul></div>
+
+    <textarea id="message" placeholder="Press enter to send a message"></textarea>
+    
+</body>
+</html>
